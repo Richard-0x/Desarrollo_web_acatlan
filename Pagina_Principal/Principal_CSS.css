@@ -146,13 +146,6 @@ body {
     padding: 20px;
 }
 
-/* Estilos para las imágenes */
-.video-img {
-    width: 200px; /* Ajusta el tamaño de las imágenes */
-    height: auto;
-    border-radius: 10px; /* Bordes redondeados */
-}
-
 /* Estilos para el iframe del video */
 iframe {
     width: 560px; /* Ancho del video */
