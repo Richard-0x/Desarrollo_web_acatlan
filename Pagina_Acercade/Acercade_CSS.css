@@ -239,3 +239,19 @@ body {
 #btnScrollTop:hover {
     background-color: #00509E;
 }
+
+
+/* Pie de pagina */
+
+footer {
+    font-size: 10px;
+    text-align:center;
+    padding: 10px;
+    background: #003366;
+    color: white;
+    position: relative;
+    text-transform: uppercase;
+    bottom: 0;
+    width: 90%;
+    font-weight: bold;
+}
