@@ -78,6 +78,26 @@
         </div>
     </section>
 
+    <!-- Scroll subir_pagina-->
+
+    <button id="btnScrollTop" onclick="scrollToTop()">↑</button>
+
+    <script>
+      window.onscroll = function () {
+        var btn = document.getElementById("btnScrollTop");
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+          btn.style.display = "block";
+        } else {
+          btn.style.display = "none";
+        }
+      };
+    
+      function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
+    </script>
+
+
     <footer>
         <p>&copy; 2025 Planta de Aguas Residuales. Todos los derechos reservados.</p>
     </footer>

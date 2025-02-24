@@ -1,6 +1,7 @@
-/* Estilos generales */
+/*Logo UNAM */
 body {
-    font-family: Arial, sans-serif;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 25px;
     margin: 0;
     padding: 0;
     background-color: #f8f9fa;
@@ -10,34 +11,32 @@ body {
     min-height: 100vh;
 }
 
-/* Logo UNAM */
+
 .logo-container {
-    position: absolute;
-    top: 25px;
-    left: 25px;
-    width: 250px;
+    position:absolute;
+    top: 10px;
+    left: 10px;
+    width: 200px;
+    
 }
 
-.logo-container img {
-    width: 100%;
-    height: auto;
-}
+
 
 /* Menú de navegación */
 .navbar {
     display: flex;
     justify-content: center;
-    background-color: #fff;
+    background-color: #003366;
     padding: 15px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-    margin: 20px auto 20px; /* Ajuste para el logo */
+    margin: 20px 100px 20px 100px;
     width: fit-content;
 }
 
 .navbar a {
     text-decoration: none;
-    color: black;
+    color: white;
     margin: 0 15px;
     font-size: 16px;
     padding: 10px 15px;
@@ -51,16 +50,6 @@ body {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.navbar a.active::after {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 2px;
-    background-color: blue;
-    position: absolute;
-    bottom: -5px;
-    left: 0;
-}
 
 .dropdown {
     position: relative;
@@ -100,30 +89,31 @@ body {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 600px;
+    width: 1300px;
     text-align: center;
-    margin-top: 20px;
+    margin: 50px 10px 50px 10px;
+    
 }
 
 .contenedor_p1 h1 {
-    font-size: 24px;
+    font-size: 35px;
     color: #333;
     margin-bottom: 20px;
 }
 
 .contenedor_p1 p {
-    font-size: 16px;
+    font-size:20px;
     color: #666;
     line-height: 1.6;
 }
 
 .contenedor_p1 .img1 {
-    width: 200px;
+    width: 250px;
     border-radius: 10px;
     margin-bottom: 20px;
 }
 
-/* Estilos generales */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -140,16 +130,160 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 20px; /* Espacio entre el video y las imágenes */
+    gap: 20px; 
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
 }
 
-/* Estilos para el iframe del video */
+.video-img {
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+}
+
+
 iframe {
-    width: 560px; /* Ancho del video */
-    height: 315px; /* Alto del video */
+    width: 560px;
+    height: 315px; 
+    border-radius: 10px; 
     border: none;
-    border-radius: 10px; /* Bordes redondeados */
+}
+
+.contenedor_p1_fondo{
+    background-color: white;
+    padding: 40px 20px 40px 20px;
+    border-radius: 10px;
+    width: fit-content;
+}
+
+/* Scroll subir_pagina */
+
+#btnScrollTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #003366;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    display: none; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    transition: opacity 0.3s ease;
+}
+
+#btnScrollTop:hover {
+    background-color: #00509E;
+}
+
+
+/* Lista p1*/
+
+.lista_p1 {
+    background-color: #003366;
+    color: white; 
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    width: 1300px;
+    margin: 20px auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.lista_p1 h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.li_p1 {
+    list-style: none;
+    padding: 0;
+}
+
+.li_p1 li {
+    background-color: white;
+    color: black;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    font-size: 18px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.li_p1 li::before {
+    content: "✔"; 
+    color: rgb(59, 248, 74); 
+    font-size: 20px;
+}
+
+.lista_p1 h3 {
+    margin-top: 20px;
+    font-size: 22px;
+    color: yellow;
+}
+
+.lista_p1 p {
+    font-size: 18px;
+    color: #ddd;
+    margin-top: 10px;
+}
+
+/* Lista p2*/
+
+.lista_p2 {
+    background-color: #003366;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 1300px;
+    text-align: left;
+    margin: 20px auto;
+}
+
+.lista_p2 h1 {
+    font-size: 28px;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.li_p2 {
+    list-style-type: lower-alpha;
+    padding-left: 20px;
+    font-size: 18px;
+    color: #333;
+}
+
+.li_p2 li {
+    margin-bottom: 15px;
+    line-height: 1.6;
+    background-color: #ffffff;
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.li_p2 li:hover {
+    background-color: #007bff;
+    color: white;
+    transform: scale(1.02);
+}
+
+.li_p2 strong {
+    color: #003366;
+}
+
+.lista_p2 h3 {
+    margin-top: 20px;
+    font-size: 22px;
+    color: yellow;
 }
