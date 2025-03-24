@@ -1,0 +1,27 @@
+// Smooth scroll para los enlaces del menú
+document.querySelectorAll('nav a').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault(); // Evita el comportamiento por defecto
+        const targetId = this.getAttribute('href'); // Obtiene el ID de la sección
+        document.querySelector(targetId).scrollIntoView({
+            behavior: 'smooth' // Desplazamiento suave
+        });
+    });
+});
+// Mostrar u ocultar el botón de "Volver arriba"
+window.onscroll = function() {
+    const btnVolverArriba = document.getElementById('btn-volver-arriba');
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        btnVolverArriba.style.display = 'block'; // Muestra el botón
+    } else {
+        btnVolverArriba.style.display = 'none'; // Oculta el botón
+    }
+};
+
+// Función para volver al inicio de la página
+document.getElementById('btn-volver-arriba').addEventListener('click', function() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth' // Desplazamiento suave
+    });
+});

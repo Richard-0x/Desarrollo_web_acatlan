@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acerca De</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <nav class="main-menu">
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#aguas-residuales">Aguas Residuales</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <section class="about-card"></section>
+    
+
+    <header class="hero">
+        <div class="hero-grid">
+            <!-- Primer logo (UNAM) con enlace -->
+            <a href="https://www.unam.mx" target="_blank" class="logo-link">
+                <img src="logoprincipal.png" alt="Logo UNAM" class="hero-logo">
+            </a>
+    
+            <!-- Contenido central (título y subtítulo) -->
+            <div class="hero-content">
+                <h1>Acerca de</h1>
+            </div>
+    
+            <!-- Segundo logo (FES Acatlán) con enlace -->
+            <a href="https://www.acatlan.unam.mx" target="_blank" class="logo-link">
+                <img src="fesacatlan1.png" alt="Logo FES Acatlán" class="hero-logo">
+            </a>
+        </div>
+    </header>
+
+    <section class="about">
+        <h2>¿Qué es la PTAR de la FES Acatlán?</h2>
+        <p>La Planta de Tratamiento de Aguas Residuales (PTAR) es una instalación clave para la purificación del agua, permitiendo su reutilización y minimizando el impacto ambiental, esta se encuentra en el municipio de Naucalpan de Juaréz, Estado de México. La PTAR forma parte de una investigación de la FES Acatlán, en 2018 se concluyó la red de riego para las zonas verdes del área deportiva del campus. Después de Ciudad Universitaria, Acatlán es la primera entidad de la UNAM dotada con este tipo de instalaciones para el uso, operación e investigaciones.Además, disminuye el volumen de aguas residuales vertidas al drenaje del municipio convirtiéndose en una opción para abatir la contaminación ambiental en esta zona del Estado de México. La planta de tratamiento más cercana a la de la FES Acatlán se localiza a 3.9 kilómetros, en el Parque Naucalli, del tipo de lodos activados, aunque en extensión supera por muchos metros cuadrados al del campus universitario. La planta de Acatlán es piloto, diseñada en un espacio mínimo y aunque pequeña, es potente al contar con tecnología de punta, dos patentes y un preciso sistema de control de motores, se trata de una planta semi automatizada, por sus dimensiones difícilmente se encuentra otra igual en todo el país.</p>
+        <div class="image-container">
+            <img src="planta1.jpg" alt="Descripción de la imagen 1" class="about-img">
+            <img src="planta2.jpg" alt="Descripción de la imagen 2" class="about-img">
+            <img src="planta3(1).jpg" alt="Descripción de la imagen 2" class="about-img">
+
+        </div>
+    </section>
+
+    <section class="details">
+        <h2>Funcionamiento de la PTAR</h2>
+        <p>Bajo la dirección del Dr. Omar Reyes Martínez, la PTAR se ha consolidado como un centro de innovación tecnológica y educativa. Además de su función principal en el tratamiento de aguas, la planta sirve como una herramienta didáctica para la comunidad académica, facilitando la investigación y el aprendizaje práctico en procesos de saneamiento y gestión ambiental.</p>
+        <ul>
+            <li>Pretratamiento y eliminación de sólidos. Con una extensión de 40 por 40 metros cuadrados, la PTAR de la FES Acatlán destaca por su diseño compacto y eficiente, capaz de operar sin la emisión de malos olores, lo que la hace compatible con el entorno universitario y la comunidad circundante. </li>
+            <li>La planta está equipada con tecnología de punta, incluyendo un reactor anaerobio de manto de lodos de flujo ascendente (UASB) y sistemas de lodos activados. Estas tecnologías permiten una depuración eficiente del agua residual, asegurando que el efluente cumpla con los estándares ambientales antes de su reutilización o descarga. </li>
+        </ul>
+        <div class="image-container">
+            <img src="planta4.jpg" alt="Descripción de la imagen 1" class="about-img">
+            <img src="planta5.jpg" alt="Descripción de la imagen 1" class="about-img">
+            <img src="planta6.jpg" alt="Descripción de la imagen 1" class="about-img">
+
+            <section class="mission-vision">
+                <!-- Tarjeta de Misión -->
+                <div class="card">
+                    <div class="card-title">
+                        <h3>Misión</h3>
+                    </div>
+                    <div class="card-content">
+                        <p>Garantizar el tratamiento adecuado del agua residual para su reutilización y conservación del medio ambiente.</p>
+                    </div>
+                </div>
+            
+                <!-- Tarjeta de Visión -->
+                <div class="card">
+                    <div class="card-title">
+                        <h3>Visión</h3>
+                    </div>
+                    <div class="card-content">
+                        <p>Ser una referencia en el tratamiento de aguas residuales a nivel nacional con tecnologías innovadoras.</p>
+                    </div>
+                </div>
+            
+                <!-- Tarjeta de Valores -->
+                <div class="card full-width">
+                    <div class="card-title">
+                        <h3>Valores</h3>
+                    </div>
+                    <div class="card-content">
+                        <p>Sostenibilidad, responsabilidad y compromiso con el medio ambiente.</p>
+                    </div>
+                </div>
+            
+                <!-- Imagen debajo de las tarjetas -->
+                <div class="imagen-debajo">
+                    <img src="galeriafesacatlan.jpg" alt="Descripción de la imagen" class="imagen-tarjetas">
+                </div>
+            </section>
+
+
+    <section class="video">
+        <h2>Conoce más sobre la PTAR</h2>
+        <p>A través de esta página web, te invitamos a conocer más sobre los procesos, tecnologías y beneficios que la Planta de Tratamiento de Aguas Residuales de la FES Acatlán que aporta a la comunidad y al medio ambiente.</p>
+        
+        <div class="video-container">
+            <!-- Imagen izquierda -->
+            <img src="ranita.png" alt="Imagen izquierda" class="video-img">
+            
+            <!-- Video centrado -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/V1rAZFW-8H8" 
+                title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+            
+            <!-- Imagen derecha -->
+            <img src="cosamural.jpg" alt="Imagen derecha" class="video-img">
+        </div>
+    </section>
+    
+    <section id="redes-sociales">
+        <h2>Redes Sociales y Recorrido Virtual</h2>
+        <p>Síguenos en nuestras redes sociales y explora la FES Acatlán.</p>
+    
+        <!-- Contenedor de redes sociales -->
+        <div class="redes-container">
+            <!-- Enlace a Facebook -->
+            <a href="https://www.facebook.com/FESAcatlanUNAM" target="_blank" class="red-social">
+                <img src="facebook.jpg" alt="Facebook" class="icono-red-social">
+                <span>Facebook</span>
+            </a>
+    
+            <!-- Enlace a Twitter -->
+            <a href="https://twitter.com/FESAcatlanUNAM" target="_blank" class="red-social">
+                <img src="Xlogo.png" alt="Twitter" class="icono-red-social">
+                <span>X(AntesTwitter)</span>
+            </a>
+    
+            <!-- Enlace a Instagram -->
+            <a href="https://www.instagram.com/fesacatlanunam" target="_blank" class="red-social">
+                <img src="iglogo.jpg" alt="Instagram" class="icono-red-social">
+                <span>Instagram</span>
+            </a>
+    
+            <!-- Enlace al Recorrido Virtual -->
+            <a href="https://www.acatlan.unam.mx/PIU/recorrido/index.html" target="_blank" class="red-social">
+                <img src="escudoFES.jpg" alt="Recorrido Virtual" class="icono-red-social">
+                <span>Recorrido Virtual</span>
+            </a>
+        </div>
+    </section>
+
+
+    <section id="ubicacion">
+        <h2>Ubicación</h2>
+        <p>Encuentra la PTAR en la FES Acatlán.</p>
+        
+        <div class="ubicacion-container">
+            <!-- Imagen izquierda con enlace -->
+            <a href="https://www.gob.mx/conagua" target="_blank" class="enlace-imagen">
+                <img src="glifoAgua.png" alt="Descripción de la imagen izquierda" class="ubicacion-img izquierda">
+            </a>
+    
+            <!-- Mapa -->
+            <div class="mapa-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3760.869441018947!2d-99.23948548561678!3d19.50451128685048!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d21f9a4f1a2b0f%3A0x8f1f5f5f5f5f5f5f!2sFES%20Acatl%C3%A1n%2C%20Universidad%20Nacional%20Aut%C3%B3noma%20de%20M%C3%A9xico!5e0!3m2!1ses!2smx!4v1629999999999!5m2!1ses!2smx"
+                    width="100%"
+                    height="450"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy">
+                </iframe>
+            </div>
+    
+            <!-- Imagen derecha con enlace -->
+            <a href="https://www.oapasnaucalpan.gob.mx/" target="_blank" class="enlace-imagen">
+                <img src="glifonaucalpan.png" alt="Descripción de la imagen derecha" class="ubicacion-img derecha">
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <p>Contacto: soporte@acatlan.unam.mx. | Tel: 55 5623 1592</p>
+        <p>Dirección: Av. Jardines de San Mateo s/n, Sta Cruz Acatlan, 53150 Naucalpan de Juárez, Méx.</p>
+    </footer>
+    
+
+
+<!-- Botón de "Volver arriba" -->
+<button id="btn-volver-arriba" title="Volver arriba">?</button>
+
+<script src="script.js"></script>
+
+</body>
+</html>
