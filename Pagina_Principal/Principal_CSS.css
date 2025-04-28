@@ -1,4 +1,4 @@
-/*Logo UNAM */
+
 body {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 25px;
@@ -11,15 +11,41 @@ body {
     min-height: 100vh;
 }
 
-
-.logo-container {
-    position:absolute;
-    top: 10px;
-    left: 10px;
-    width: 200px;
+/* Encabezado y logos*/
+header {
+    background-color: #003366;
+    color: white;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position:relative;
+    width: 100%;
+    box-shadow: 0px 5px 10px rgb(0,132,159);
+    background: linear-gradient(to right, rgb(0,62,91), rgb(0,178,169) );
     
 }
 
+.header-contenido {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+header img {
+    margin: 10px 20px 10px 20px;
+    max-height: 80px; 
+    
+}
+
+header h2 {
+    margin: 5px 10px 5px 10px;
+    font-size: 50px;
+    text-align: center;
+    flex-grow: 1;
+    max-width: 100%;
+    font-family:'Times New Roman', Times, serif;
+}
 
 
 /* Menú de navegación */
@@ -30,8 +56,9 @@ body {
     padding: 15px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-    margin: 20px 100px 20px 100px;
+    margin: 20px auto;
     width: fit-content;
+    background: linear-gradient(to right, rgb(0,62,91), rgb(0,178,169) );
 }
 
 .navbar a {
@@ -51,79 +78,166 @@ body {
 }
 
 
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: white;
-    min-width: 150px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    z-index: 1;
-    border-radius: 5px;
-    overflow: hidden;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-.dropdown-content a {
-    display: block;
-    padding: 10px;
-    text-align: left;
-    transition: background 0.3s ease;
-}
-
-.dropdown-content a:hover {
-    background-color: #007bff;
-    color: white;
-}
-
 /* Contenedor p1 */
-.contenedor_p1 {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 1300px;
-    text-align: center;
-    margin: 50px 10px 50px 10px;
-    
+.contenedor_p1_fondo {
+    background-color: #f2f2f2;
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+
 }
+
+/* Contenedor interno */
+.contenedor_p1 {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    width: 85%;
+    text-align: center;
+    margin: 20px;
+}
+
 
 .contenedor_p1 h1 {
-    font-size: 35px;
-    color: #333;
-    margin-bottom: 20px;
+    font-size: 32px;
+    color: #003366;
+    margin-bottom: 25px;
+}
+
+.contenedor_p1 h3 {
+    font-size: 25px;
+    color: #003366;
+    margin-bottom: 25px;
+    text-align: center;
 }
 
 .contenedor_p1 p {
-    font-size:20px;
-    color: #666;
-    line-height: 1.6;
+    font-size: 20px;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 30px;
 }
 
-.contenedor_p1 .img1 {
-    width: 250px;
-    border-radius: 10px;
-    margin-bottom: 20px;
-}
-
-
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+.imagenes-fila {
     display: flex;
+    width: 800px;
+    height: 530px;
     justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-color: #f8f9fa;
+    margin: 0 auto;   
+    
+   
 }
+
+.img_sec {
+    
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: 0.8;
+    cursor: pointer;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    justify-content: center;
+   
+}
+
+.img_sec:hover {
+    cursor: crosshair;
+    width: 450px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+
+
+.img-galeria {
+    width: 250px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.img-galeria:hover {
+    transform: scale(.05);
+}
+
+
+.lista-enlaces {
+    list-style: none;
+    padding-left: 0;
+    text-align:center;
+    font-size: 18px;
+
+}
+
+.lista-enlaces li {
+    margin-bottom: 10px;
+}
+
+.lista-enlaces a {
+    color: #003366;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.lista-enlaces a:hover {
+    color: #0099cc;
+    text-decoration: underline;
+}
+
+/* Contenedor article sis bio */
+
+.article-container-sis-bio{
+    width: 80%;
+    margin: 20px auto;
+    resize: horizontal;
+    border-radius: 10px;
+    
+}
+
+
+.article_sis_bio{
+    width: 100%;
+    background: linear-gradient(to right, rgb(0,132,159), rgb(0,62,91) );
+    border-radius: 10px;
+}
+
+.article_img_sis_bi{
+    aspect-ratio: 2/1.5;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+
+    margin: 20px auto;
+    width: 100%;
+    height: 350px;
+    
+    
+}
+
+
+.article_text_sis_bi{
+    padding: 2rem;
+    border-radius: 30px;
+    position: relative;
+    top: -30px;
+}
+
+.article_sis_bio h1 {
+    color: white;
+    text-align: center;
+    
+}
+
+.article_sis_bio p{
+    color: white;
+    margin: 20px ,auto;
+    padding: 20px;
+}
+
+
 
 /* Contenedor del video e imágenes */
 .video-container {
@@ -133,7 +247,7 @@ body {
     gap: 20px; 
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 30px;
 }
 
 .video-img {
@@ -180,24 +294,42 @@ iframe {
     background-color: #00509E;
 }
 
+/* Conteneder listas */
+
+.contenedor-listas {
+    display: flex;
+    gap: 20px;
+    width: 90%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
 
 /* Lista p1*/
 
 .lista_p1 {
-    background-color: #003366;
+    background: linear-gradient(to right, rgb(0,132,159), rgb(0,62,91) );
     color: white; 
     padding: 30px;
     border-radius: 10px;
     text-align: center;
-    width: 1300px;
     margin: 20px auto;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    display:flex;
+    flex-wrap: wrap;
+    width: 40%;
+}
+
+.lista_p1 li:hover {
+    background-color: #007bff;
+    color: white;
+    transform: scale(1.02);
 }
 
 .lista_p1 h1 {
     font-size: 32px;
     margin-bottom: 20px;
     text-transform: uppercase;
+    text-align: center;
 }
 
 .li_p1 {
@@ -228,6 +360,7 @@ iframe {
     margin-top: 20px;
     font-size: 22px;
     color: yellow;
+    text-align: center;
 }
 
 .lista_p1 p {
@@ -236,57 +369,45 @@ iframe {
     margin-top: 10px;
 }
 
-/* Lista p2*/
+/* Contenedor P2 */
 
-.lista_p2 {
-    background-color: #003366;
-    padding: 20px;
+.contenedor_p2 {
+    background: linear-gradient(to right, rgb(0,132,159), rgb(0,62,91) );
+
+    color: white;
+    padding: 30px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 1300px;
-    text-align: left;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     margin: 20px auto;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
 }
 
-.lista_p2 h1 {
-    font-size: 28px;
-    color: white;
-    text-align: center;
+
+.img1 {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
     margin-bottom: 20px;
 }
 
-.li_p2 {
-    list-style-type: lower-alpha;
-    padding-left: 20px;
-    font-size: 18px;
-    color: #333;
-}
-
-.li_p2 li {
+.contenedor_p2 h1 {
+    font-size: 20px;
     margin-bottom: 15px;
-    line-height: 1.6;
-    background-color: #ffffff;
-    padding: 12px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
-}
-
-.li_p2 li:hover {
-    background-color: #007bff;
     color: white;
-    transform: scale(1.02);
 }
 
-.li_p2 strong {
-    color: #003366;
+
+.contenedor_p2 p {
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: justify;
+    color: #f0f0f0;
 }
 
-.lista_p2 h3 {
-    margin-top: 20px;
-    font-size: 22px;
-    color: yellow;
-}
 
 /* Pie de pagina */
 
@@ -299,6 +420,9 @@ footer {
     position: relative;
     text-transform: uppercase;
     bottom: 0;
-    width: 90%;
+    width: 100%;
     font-weight: bold;
+    background: linear-gradient(to right, rgb(0,62,91), rgb(0,178,169) );
 }
+
+

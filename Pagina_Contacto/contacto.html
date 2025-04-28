@@ -7,24 +7,10 @@
     <link rel="stylesheet" href="Contacto_CSS.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-
-
 </head>
 
 
 <body>
-
-    
-
-    <nav class="navbar">
-
-        <a href="../Pagina_Principal/Pagina_Principal.html">Inicio</a>
-        <a href="../Pagina_Aguas_Residuales/Aguas_Residuales.html">Aguas Residuales</a>
-        <a href="../Pagina_Acercade/Acercade.html">Acerca de</a>
-    </nav>
-
-
-
 
     <header>
         <div class="header-contenido">
@@ -33,6 +19,20 @@
             <img src="../Pagina_Contacto/Imagenes_Contacto_pag/logo-fes.png" alt="Logo de FES">
         </div>
     </header>
+
+    <nav class="navbar">
+
+        <a href="../Pagina_Principal/Pagina_Principal.html">Inicio</a>
+
+      <a href="../Pagina_Acercade/Acercade.html" class="active">Acerca de</a>
+      
+      <a href="../Pagina_Galeria_F/Galeria_F.html">Galeria</a>
+
+      <a href="../Pagina_Normas_PTAR/Normas.html" >Norma |NOM|</a>
+
+      <a href="../Pagina_Usuarios/index.html ">Acceso</a>
+
+    </nav>
 
     <section class="contacto-seccion">
         <div class="contacto-info">
@@ -65,16 +65,6 @@
                 </div>
                 <button type="boton">Enviar Mensaje</button>
             </form>
-            <div class="mapa">
-                <h3>Ubicación</h3>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3761.3424707608087!2d-99.24908302611315!3d19.48389623904331!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d2030f995d7901%3A0xc8546d108471abcd!2sFacultad%20de%20Estudios%20Superiores%20Acatl%C3%A1n%20UNAM!5e0!3m2!1ses-419!2smx!4v1740182390666!5m2!1ses-419!2smx" 
-                width="100" 
-                height="400" 
-                style="border:0;" 
-                allowfullscreen="" 
-                loading="lazy" 
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
         </div>
     </section>
 
@@ -96,6 +86,65 @@
         window.scrollTo({ top: 0, behavior: "smooth" });
       }
     </script>
+
+
+        <section id="ubicacion">
+            <h2>Ubicación</h2>
+            <p>Encuentra la PTAR en la FES Acatlán.</p>
+            
+            <div class="ubicacion-container">
+                <!-- Imagen izquierda con enlace -->
+                <a href="https://www.pumagua.unam.mx/calidad_aresidual_tesis.html" target="_blank" class="enlace-UNAM">
+                    <img src="../Pagina_Contacto/Imagenes_Contacto_pag/Logo_CU_UNAM.jpg" alt="pagina UNAM" class="ubicacion-img">
+                </a>
+
+                <!-- Mapa de Google -->
+                <div class="mapa-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3760.869441018947!2d-99.23948548561678!3d19.50451128685048!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d2030f995d7901%3A0xc8546d108471abcd!2sFES%20Acatl%C3%A1n%2C%20Universidad%20Nacional%20Aut%C3%B3noma%20de%20M%C3%A9xico!5e0!3m2!1ses!2smx!4v1629999999999!5m2!1ses!2smx"
+                        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+                    </iframe>
+                </div>
+
+                <!-- Imagen derecha con enlace -->
+                <a href="https://www.acatlan.unam.mx/" target="_blank" class="pagina_fes">
+                    <img src="../Pagina_Contacto/Imagenes_Contacto_pag/Logo_FES_ACATLAN_UNAM.png" alt="logo-fes" class="ubicacion-img">
+                </a>
+            </div>
+
+            <!-- Dirección de la FES Acatlán -->
+            <div class="direccion">
+                <p><strong>📍 Dirección:</strong> Av. Alcanfores y San Juan Totoltepec s/n, Sta. Cruz Acatlán, 53150 Naucalpan de Juárez, Estado de México.</p>
+            </div>
+        </section>
+
+
+        <section id="redes-sociales">
+            <h2>Redes Sociales y Recorrido Virtual</h2>
+            <p>Síguenos en nuestras redes sociales y explora la FES Acatlán.</p>
+
+            <!-- Contenedor de redes sociales -->
+            <div class="redes-container">
+                <!-- Enlace a Facebook -->
+                <a href="https://www.facebook.com/FESAcatlanUNAM" target="_blank" class="red-social">
+                    <img src="../Pagina_Acercade/Imagenes_Acercade_pag/facebook.jpg" alt="Facebook" class="icono-red-social">
+                    <span>Facebook</span>
+                </a>
+
+                <!-- Enlace a Twitter -->
+                <a href="https://twitter.com/FESAcatlanUNAM" target="_blank" class="red-social">
+                    <img src="../Pagina_Acercade/Imagenes_Acercade_pag/Xlogo.png" alt="Twitter" class="icono-red-social">
+                    <span>X(AntesTwitter)</span>
+                </a>
+
+                <!-- Enlace a Instagram -->
+                <a href="https://www.instagram.com/fesacatlanunam" target="_blank" class="red-social">
+                    <img src="../Pagina_Acercade/Imagenes_Acercade_pag/iglogo.jpg" alt="Instagram" class="icono-red-social">
+                    <span>Instagram</span>
+                </a>
+
+            </div>
+        </section>
 
     <footer>
         <p>Contacto: soporte@acatlan.unam.mx. | Tel: 55 5623 1592</p>

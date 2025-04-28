@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PTAR FES-ACATLÁN | Sistema de Acceso</title>
+    <meta name="description" content="Planta de Tratamiento de Aguas Residuales - FES Acatlán">
+    
+    <!-- Fuentes -->
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="style3.css">
+    <link rel="stylesheet" href="style4.css">
+    <link rel="stylesheet" href="style5.css">
+    <link rel="stylesheet" href="../Pagina_Usuarios/index_CSS.css">
+    
+
+    
+    <style>
+        /* Estilos base (personalízalos) */
+        .error-message {
+            color: #ff3333;
+            margin-bottom: 15px;
+            font-size: 14px;
+        }
+        .success-message {
+            color: #4CAF50;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-contenido">
+            <img src="../Pagina_Contacto/Imagenes_Contacto_pag/Logo-UNAM.png" alt="Logo de UNAM">
+  
+            <h2>Usuario</h2>
+  
+            <img src="../Pagina_Contacto/Imagenes_Contacto_pag/logo-fes.png" alt="Logo de FES">
+        </div>
+    </header>
+      
+      <nav class="navbar">
+  
+        <a href="../Pagina_Principal/Pagina_Principal.html">Inicio</a>
+  
+        <a href="../Pagina_Acercade/Acercade.html" class="active">Acerca de</a>
+        
+        <a href="../Pagina_Galeria_F/Galeria_F.html">Galeria</a>
+  
+        <a href="../Pagina_Normas_PTAR/Normas.html" >Norma |NOM|</a>
+        
+        <a href="../Pagina_Contacto/contacto.html">Contacto</a>
+  
+        <a href="../Pagina_Usuarios/index.html ">Acceso</a>
+  
+  
+    </nav>
+
+    <div class="container" id="container">
+        <!-- Formulario Sign Up (Registro) -->
+        <div class="form-container sign-up">
+            <form action="registro.php" method="POST" aria-label="Formulario de registro">
+                <h1>Crear Cuenta</h1>
+                
+                <!-- Mensajes de error/éxito -->
+                <?php if (isset($_GET['registro']) && $_GET['registro'] === 'exitoso'): ?>
+                                <?php endif; ?>
+                <?php if (isset($error)): ?>
+                    <div class="error-message"><?php echo htmlspecialchars($error); ?></div>
+                <?php endif; ?>
+
+                <div class="social-icons">
+                    <a href="#" class="icon" aria-label="Google"><i class="fab fa-google"></i></a>
+                    <a href="#" class="icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                </div>
+                <span>o usa tu email institucional</span>
+                
+                <input type="text" name="nombre" placeholder="Nombre completo" aria-label="Nombre" required>
+                <input type="email" name="email" placeholder="Email @unam.mx" aria-label="Email" required>
+                <input type="password" name="password" placeholder="Contraseña (mín. 8 caracteres)" aria-label="Contraseña" minlength="8" required>
+                <input type="password" name="confirm_password" placeholder="Confirmar contraseña" aria-label="Confirmar contraseña" required>
+                
+                <button type="submit">Registrarse</button>
+            </form>
+        </div>
+
+        <!-- Formulario Sign In (Login) -->
+        <div class="form-container sign-in">
+            <form action="validar_login.php" method="POST" aria-label="Formulario de inicio de sesión">
+                <h1>Acceso PTAR</h1>
+                
+                <!-- Mensaje de error -->
+                <?php if (isset($error)): ?>
+                    <div class="error-message"><?php echo htmlspecialchars($error); ?></div>
+                <?php endif; ?>
+                
+                <span>o usa tus credenciales</span>
+                
+                <input type="email" name="email" placeholder="Email @unam.mx" aria-label="Email" required>
+                <input type="password" name="password" placeholder="Contraseña" aria-label="Contraseña" required>
+                
+                <a href="recuperar.php" class="forgot-password">¿Olvidaste tu contraseña?</a>
+                <button type="submit">Ingresar</button>
+            </form>
+        </div>
+
+        <!-- Toggle Container (Animación) -->
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>¡Bienvenido de vuelta!</h1>
+                    <p>Accede al sistema de gestión de la PTAR</p>
+                    <button class="hidden" id="login">Iniciar Sesión</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <h1>¿Primera vez aquí?</h1>
+                    <p>Regístrate para gestionar riegos y parámetros</p>
+                    <button class="hidden" id="register">Registrarse</button>
+                </div>
+            </div>
+        </div>
+    </div>    
+    <!-- Scripts -->
+    <script>
+        // Validación de contraseñas coincidentes (registro)
+        document.querySelector('form[aria-label="Formulario de registro"]').addEventListener('submit', function(e) {
+            const password = document.querySelector('input[name="password"]');
+            const confirmPassword = document.querySelector('input[name="confirm_password"]');
+            
+            if (password.value !== confirmPassword.value) {
+                e.preventDefault();
+                alert('Las contraseñas no coinciden');
+            }
+        });
+
+        // Toggle entre login/registro (animación)
+        const container = document.getElementById('container');
+        document.getElementById('register').addEventListener('click', () => {
+            container.classList.add("active");
+        });
+        document.getElementById('login').addEventListener('click', () => {
+            container.classList.remove("active");
+        });
+
+        // Scroll subir_pagina 
+
+    
+      window.onscroll = function () {
+        var btn = document.getElementById("btnScrollTop");
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+          btn.style.display = "block";
+        } else {
+          btn.style.display = "none";
+        }
+      };
+    
+      function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
+   
+    </script>
+
+    <button id="btnScrollTop" onclick="scrollToTop()">↑</button>
+
+        
+        
+    <footer>
+        <p>Contacto: soporte@acatlan.unam.mx. | Tel: 55 5623 1592</p>
+        <p>Dirección: Av. Jardines de San Mateo s/n, Sta Cruz Acatlan, 53150 Naucalpan de Juárez, Méx.</p>
+        <p>&copy; 2025 Planta de Aguas Residuales. Todos los derechos reservados.</p>
+    </footer>
+
+
+
+
+
+</body>
+</html>
